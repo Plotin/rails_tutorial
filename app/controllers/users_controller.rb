@@ -4,6 +4,6 @@ class UsersController < ApplicationController
   end  
   def show
     @user = User.find(params[:id])
-    @title = "Userdetails for " + @user.name
+    @title = @user.name
   end
 end
